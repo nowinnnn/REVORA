@@ -1,0 +1,4 @@
+build/
+installer/Output/
+.vs/
+out/
