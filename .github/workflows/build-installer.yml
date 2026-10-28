@@ -2,15 +2,15 @@ name: Build Windows installer
 
 on:
   push:
-    tags: [ 'v*' ]        # push a tag like v0.2.0 -> installer is built and attached to a Release
-  workflow_dispatch:      # or run it by hand from the Actions tab
+    tags: [ 'v*' ]
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
   build:
-    runs-on: runs-on: windows-2022
+    runs-on: windows-2022
     steps:
       - uses: actions/checkout@v4
 
